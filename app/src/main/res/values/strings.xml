@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Filmes populares</string>
+    <string name="empty_video_list">Nenhum item encontrado</string>
+    <string name="verify_connection">Verifique sua conexão!</string>
+</resources>

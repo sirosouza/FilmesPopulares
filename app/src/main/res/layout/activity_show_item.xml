@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginRight="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/big_font_size"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_vote_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginRight="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size"/>
+
+            <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/img_poster"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginRight="@dimen/view_margin"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:id="@+id/tv_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginRight="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size"/>
+
+            <TextView
+                    android:id="@+id/tv_release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_marginRight="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
